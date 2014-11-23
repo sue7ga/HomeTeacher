@@ -1,0 +1,8 @@
+package HomeTeacher::Web::C::Root;
+
+sub register{
+ my($class,$c) = @_;
+ return $c->render('register.tx');
+}
+
+1;
