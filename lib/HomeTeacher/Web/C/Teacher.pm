@@ -13,7 +13,7 @@ sub teacherregister{
  my($class,$c) = @_;
  print Dumper $c->req->parameters;
  $c->db->register_teacher($c->req->parameters);
- $c->redirect('register.tx');
+ return $c->redirect('/teacher/register');
 }
 
 
